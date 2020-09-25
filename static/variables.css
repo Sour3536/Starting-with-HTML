@@ -1,0 +1,88 @@
+.right, .left {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.left {
+  text-align: center;
+  width: 200px;
+  left: 0;
+  background-color: #8DD9FF;
+}
+
+.right {
+  left: 200px;
+  padding-left: 10px;
+  width: 85%;
+}
+
+div h2 {
+  color: blue;
+}
+div p1 {
+  color: purple;
+}
+div p2 {
+  color: brown;
+}
+div p3 {
+  color: darkgreen;
+}
+
+p1::selection {
+  color: white;
+  background-color: purple;
+}
+
+p2::selection {
+  color: white;
+  background-color: brown;
+}
+
+p3::selection {
+  color: white;
+  background-color: darkgreen;
+}
+
+p1 b::selection {
+  color: white;
+  background-color: purple;
+}
+p1 u::selection {
+  color: white;
+  background-color: purple;
+}
+
+p2 b::selection {
+  color: white;
+  background-color: brown;
+}
+p2 u::selection {
+  color: white;
+  background-color: brown;
+}
+
+p3 b::selection {
+  color: white;
+  background-color: darkgreen;
+}
+p3 u::selection {
+  color: white;
+  background-color: darkgreen;
+}
+
+#header {
+  background-color: lightgreen;
+  text-align: center;
+  font-family: "Arail,sans-serif";
+  font-size: 45px;
+  font-weight: bold;
+  color: magenta;
+  text-shadow: 4px 4px darkmagenta;
+}
+
+/*# sourceMappingURL=variables.css.map */

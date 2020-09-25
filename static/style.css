@@ -1,0 +1,48 @@
+.bold{
+	font-weight: bold;
+}
+body{
+	background-color: #DBF3FA;
+}
+button{
+	width: 95%;
+	height: 60px;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+}	
+.a{
+	background-color: #25274D;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 40px; 
+}
+a::before{
+	content: "\21d2 Click Here: ";
+	font-weight: bold;
+}
+table:hover{
+	background: cyan;
+}
+table,th,td{
+	border-collapse: separate;
+	border-color: brown;
+}
+div>h1{
+	color: white;
+}
+@media(max-width: 600px){
+	body{
+		background-color: yellow;
+	}
+	div h2{
+		color: red;
+	}
+	#header{
+		background-color: orange;
+	}
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+}

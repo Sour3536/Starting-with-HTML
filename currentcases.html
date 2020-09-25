@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Current Situation</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="static/style.css">
+		<link rel="stylesheet" type="text/css" href="static/variables.css">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<style>
+			.subhead{
+				text-align: center;
+				font-size: 30px;
+				margin-top: 40px;
+				margin-bottom: 0px;
+			}
+			.head{
+				text-align: center;
+				font-size: 36px;
+				padding-top: 10px;
+				margin-top: 0px;
+				font-weight: bold;
+				color: darkgrey;
+			}
+			td{
+				padding:8px;
+				text-align: right; 
+			}
+			th{
+				padding: 8px;
+				background-color: magenta;
+				text-align: center;
+			}
+			@media(min-width: 800px){
+				table{
+					width: 790px;
+					border: 1px solid black;
+					border-collapse: separate;
+				}
+				th,td{
+					border: 1px solid black;
+					border-collapse: separate;
+					border-color: brown;
+				}
+			}
+			@media(max-width: 799px){
+				table{
+					width: 300px;
+					border-collapse: collapse;
+				}
+			}
+			table{
+				margin-bottom: 30px;
+			}
+			.parallax{
+    			background-image: url('back2.jfif');
+				width: 100%;
+				height: 80%;
+				opacity:0.7;
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: cover;
+				background-attachment: fixed;
+			}
+			.parallaxHead h1{
+				padding-top: 12.5%;
+				top:50%;
+            	text-align:center;
+            	color: black;
+             	font-size: 40px;
+             	border:1px solid black;
+             }
+    		.parallaxSection{
+    			background-color:#8c8c8c;
+    			height:50%;
+   		 	}
+		</style>
+	</head>
+	<body>
+		<div class="left" style="background-color: #33ffc9">
+			<h1 class="a" style="background-color: #004d38">Welcome!</h1>
+			<p style="font-size: 18px"><b>This page shows the current cases</b></p>
+			<img height="150px" width="150px" src="images/globe.jfif"><br><br><br>
+			<button style="background-color: #00664b" onclick="location.href='virus.html'" type="button">Main Page</button>
+			<button style="background-color: #00805e" onclick="location.href='symptoms.html'" type="button">Signs and Causes</button>
+			<button style="background-color: #009970" onclick="location.href='prevention.html'" type="button">Ways to Prevent</button>
+			<button style="background-color: #00b383" onclick="location.href='management.html'" type="button">Management</button>
+  		</div>
+		<div class="right">
+			<h1 id="header">Cases Worldwide</h1>
+			<div class="parallax">
+				<div class="parallaxHead">
+					<h1><u>Coronavirus Cases:</u><br><b>5803099</b><br><br><u>Deaths:</u><br><b>357693</b><br><br><u>Recovered:</u><br><b>2508830</b></h1>
+				</div>
+			</div>
+			<br><br>
+			<!-- <div class="parallaxSection"> -->
+			<table align="center" border="1px" bgcolor="lightpink">
+				<th>S.No.</th><th>Country</th><th>Total Cases</th><th>Total Deaths</th><th>Total Recovered</th><th>Active Cases</th><th>Population</th>
+				<tr><td>1.</td><td>USA</td><td>1745803</td><td>102107</td><td>490130</td><td>1153566</td><td>330822304</td></tr>
+				<tr><td>2.</td><td>Brazil</td><td>414661</td><td>25697</td><td>166647</td><td>222317</td><td>212418030</td></tr>
+				<tr><td>3.</td><td>Russia</td><td>379051</td><td>4142</td><td>150993</td><td>223916</td><td>145928826</td></tr>
+				<tr><td>4.</td><td>Spain</td><td>283849</td><td>27118</td><td>196958</td><td>59773</td><td>46753147</td></tr>
+				<tr><td>5.</td><td>UK</td><td>267240</td><td>37460</td><td>N/A</td><td>N/A</td><td>67852992</td></tr>
+				<tr><td>6.</td><td>Italy</td><td>231139</td><td>33072</td><td>147101</td><td>50966</td><td>60469746</td></tr>
+				<tr><td>7.</td><td>France</td><td>182913</td><td>28596</td><td>66584</td><td>87733</td><td>65260368</td></tr>
+				<tr><td>8.</td><td>Germany</td><td>181895</td><td>8533</td><td>162800</td><td>10562</td><td>83759426</td></tr>
+				<tr><td>9.</td><td>Turkey</td><td>159797</td><td>4431</td><td>122793</td><td>32573</td><td>84252379</td></tr>
+				<tr><td>10.</td><td>India</td><td>158613</td><td>4540</td><td>67753</td><td>86320</td><td>1378715135</td></tr>
+				<div align="center" class="alert alert-danger" role="alert">
+  					<b>These cases are according to July 1,2020</b>
+				</div>
+			</table>
+			<!-- </div> -->
+		</div>
+	</body>
+</html>

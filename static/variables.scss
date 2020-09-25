@@ -1,0 +1,91 @@
+$color : #8DD9FF;
+$heading-color: blue;
+$p1-color: purple;
+$p2-color: brown;
+$p3-color: darkgreen;
+%split{
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+  	top: 0;
+  	overflow-x: hidden;
+}
+.left{
+	@extend %split;
+	text-align: center;
+	width: 200px;
+	left: 0;
+	background-color: $color;
+}
+.right {
+	@extend %split;
+	left: 200px;
+	padding-left: 10px;
+	width: 85%;
+}
+div{
+	h2{
+		color: $heading-color;
+	}
+	p1{
+		color: $p1-color;
+	}
+	p2{
+		color: $p2-color;
+	}
+	p3{
+		color: $p3-color;
+	}
+}
+p1::selection{
+	color:white;
+	background-color: $p1-color;
+}
+p2::selection{
+	color:white;
+	background-color: $p2-color;
+}
+p3::selection{
+	color:white;
+	background-color: $p3-color;
+}
+p1{
+	b::selection{
+		color: white;
+		background-color:$p1-color;
+	}
+	u::selection{
+		color: white;
+		background-color:$p1-color;
+	}
+}
+p2{
+	b::selection{
+		color: white;
+		background-color:$p2-color;
+	}
+	u::selection{
+		color: white;
+		background-color:$p2-color;
+	}
+}
+p3{
+	b::selection{
+	    color: white;
+		background-color:$p3-color;
+	}
+	u::selection{
+	    color: white;
+		background-color:$p3-color;
+	}
+}
+#header{
+  background-color: lightgreen;
+  text-align: center;
+  font-family: "Arail,sans-serif";
+  font-size: 45px;
+  font-weight: bold;
+  color: magenta;
+  text-shadow: 4px 4px darkmagenta; 
+}
